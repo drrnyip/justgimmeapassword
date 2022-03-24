@@ -63,14 +63,14 @@ export default {
 <style scoped>
 #generator {
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   width: 100%;
   text-align: center;
   font-size: 2em;
   border: none;
-  border-bottom: 1.5px solid #ffd369;
+  border-bottom: 1.5px ridge #ffd369;
   background: #222831;
   color: #eeeeee;
   outline: none;
@@ -87,11 +87,11 @@ export default {
 }
 
 .controls > .btn {
-  height: 40px;
+  height: 50px;
   width: 100%;
   font-size: 18px;
   padding: 5px 10px;
-  margin: 8px 0px 0px 0px;
+  margin-bottom: 15px;
   font-family: "Raleway", sans-serif;
   background: #222831;
   color: #eeeeee;
@@ -99,15 +99,15 @@ export default {
 }
 
 .left {
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 0px 0px 0px 10px;
   border: none;
-  border-right: 1px solid #ffd369;
+  border-right: 1px ridge #ffd369;
 }
 
 .right {
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 0px 10px 0px;
   border: none;
-  border-left: 1px solid #ffd369;
+  border-left: 1px ridge #ffd369;
 }
 
 @media (hover: hover) {
@@ -126,10 +126,11 @@ export default {
   }
 
   .btn {
-    height: 50px !important;
+    height: 60px !important;
   }
 
   .left {
+    margin-top: 15px !important;
     border-radius: 10px 10px 0px 0px;
     border-right: none;
   }
@@ -137,6 +138,7 @@ export default {
   .right {
     border-radius: 0px 0px 10px 10px;
     border-left: none;
+
   }
 }
 </style>
