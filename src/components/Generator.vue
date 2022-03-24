@@ -112,5 +112,9 @@ export default {
   #generator {
     font-size: 1.5em;
   }
+
+  .divider {
+    display: none;
+  }
 }
 </style>
