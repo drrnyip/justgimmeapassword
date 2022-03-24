@@ -118,6 +118,12 @@ export default {
   background: #393e46;
 }
 
+@media (hover: none) {
+  .btn:hover {
+    background: #222831;
+  }
+}
+
 @media (max-width: 1024px) {
   #generator {
     font-size: 1.5em;
