@@ -82,10 +82,6 @@ export default {
   margin: -3px 10px 0px 5px;
 }
 
-.controls {
-  cursor: pointer;
-}
-
 .controls > .divider {
   color: #ffd369;
 }
@@ -131,6 +127,7 @@ export default {
 
   .btn {
     height: 50px !important;
+    cursor: default !important;
   }
 
   .left {
