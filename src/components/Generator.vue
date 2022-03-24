@@ -62,7 +62,6 @@ export default {
 
 <style scoped>
 #generator {
-  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -70,10 +69,11 @@ export default {
   width: 100%;
   text-align: center;
   font-size: 2em;
-  border-radius: 10px;
-  border: 1px solid #ffd369;
+  border: none;
+  border-bottom: 1.5px solid #ffd369;
   background: #222831;
   color: #eeeeee;
+  outline: none;
 }
 
 .btn-icon {
