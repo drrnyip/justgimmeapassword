@@ -31,4 +31,10 @@ export default {
   color: #FFD369;
   margin-right: 10px;
 }
+
+@media (max-width: 1024px) {
+  .list {
+    padding-inline-start: 0px;
+  }
+}
 </style>

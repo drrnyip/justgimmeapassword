@@ -3,12 +3,11 @@
     <input id="generator" type="text" v-model="passwordValue" />
   </div>
   <div class="flex controls">
-    <button class="btn" id="regenerate" @click="setPassword">
+    <button class="btn left" id="regenerate" @click="setPassword">
       <img class="btn-icon" src="../assets/redo.svg" />
       <span>Gimme a different one</span>
     </button>
-    <span class="divider">|</span>
-    <button class="btn" id="copy" @click="copyPassword">
+    <button class="btn right" id="copy" @click="copyPassword">
       <img class="btn-icon" src="../assets/clipboard.svg" />
       <span>Copy to clipboard</span>
     </button>
@@ -92,20 +91,31 @@ export default {
 }
 
 .controls > .btn {
+  height: 40px;
   width: 100%;
   font-size: 18px;
   padding: 5px 10px;
-  margin: 8px 5px;
+  margin: 8px 0px 0px 0px;
   font-family: "Raleway", sans-serif;
-  border-radius: 10px;
   background: #222831;
   color: #eeeeee;
-  border: none;
   cursor: pointer;
 }
 
+.left {
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  border-right: 1px solid #ffd369;
+}
+
+.right {
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  border-left: 1px solid #ffd369;
+}
+
 .controls > .btn:hover {
-  background: #393E46;
+  background: #393e46;
 }
 
 @media (max-width: 1024px) {
@@ -115,6 +125,20 @@ export default {
 
   .divider {
     display: none;
+  }
+
+  .btn {
+    height: 50px !important;
+  }
+
+  .left {
+    border-radius: 10px 10px 0px 0px;
+    border-right: none;
+  }
+
+  .right {
+    border-radius: 0px 0px 10px 10px;
+    border-left: none;
   }
 }
 </style>
