@@ -1,6 +1,6 @@
 <template>
+  <h1 class="title">just gimme a password</h1>
   <div id="main">
-    <h1 class="title">just gimme a password</h1>
     <Generator />
     <Preamble />
   </div>
@@ -39,11 +39,11 @@ body {
 
 .title {
   font-family: "Sigmar One", cursive;
-  font-size: 2.5rem;
+  font-size: 4vmax;
   text-align: center;
   white-space: nowrap;
   margin: 25px auto 25px;
-  -webkit-text-stroke: 1px #FFD369;
+  -webkit-text-stroke: 1px #ffd369;
   color: #222831;
 }
 
