@@ -7,17 +7,17 @@
       <img class="btn-icon" src="../assets/redo.svg" />
       <span>Gimme a different one</span>
     </button>
+    <span class="divider">|</span>
     <button class="btn" id="copy" @click="copyPassword">
       <img class="btn-icon" src="../assets/clipboard.svg" />
       <span>Copy to clipboard</span>
     </button>
-
   </div>
 </template>
 
 <script>
 import { useToast } from "vue-toastification";
-import { generateNewPassword } from "../words"
+import { generateNewPassword } from "../words";
 
 export default {
   name: "Generator",
@@ -62,7 +62,6 @@ export default {
 </script>
 
 <style scoped>
-
 #generator {
   width: 100%;
   padding: 12px 20px;
@@ -73,9 +72,9 @@ export default {
   text-align: center;
   font-size: 2em;
   border-radius: 10px;
-  border: 1px solid #FFD369;
+  border: 1px solid #ffd369;
   background: #222831;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .btn-icon {
@@ -84,16 +83,29 @@ export default {
   margin: -3px 10px 0px 5px;
 }
 
+.controls {
+  cursor: pointer;
+}
+
+.controls > .divider {
+  color: #ffd369;
+}
+
 .controls > .btn {
   width: 100%;
   font-size: 18px;
   padding: 5px 10px;
   margin: 8px 5px;
   font-family: "Raleway", sans-serif;
+  border-radius: 10px;
   background: #222831;
-  color: #EEEEEE;
-  border: 1px ridge #FFD369;
+  color: #eeeeee;
+  border: none;
   cursor: pointer;
+}
+
+.controls > .btn:hover {
+  background: #393E46;
 }
 
 @media (max-width: 1024px) {
