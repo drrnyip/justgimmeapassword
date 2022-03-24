@@ -114,13 +114,9 @@ export default {
   border-left: 1px solid #ffd369;
 }
 
-.controls > .btn:hover {
-  background: #393e46;
-}
-
-@media (hover: none) {
+@media (hover: hover) {
   .btn:hover {
-    background: #222831;
+    background: #393e46;
   }
 }
 
