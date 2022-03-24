@@ -1,8 +1,8 @@
 <template>
-<div id="main">
-  <h1 class="title">just gimme a password</h1>
-  <Generator />
-  <Preamble />
+  <div id="main">
+    <h1 class="title">just gimme a password</h1>
+    <Generator />
+    <Preamble />
   </div>
   <Footer />
 </template>
@@ -17,27 +17,34 @@ export default {
   components: {
     Generator,
     Preamble,
-    Footer
+    Footer,
   },
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Sigmar+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Sigmar+One&display=swap");
+
+body {
+  background: #222831;
+}
+
 #main {
-  width: 60%;
+  width: 50%;
   margin: auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  color: white;
 }
 
 .title {
-  font-family: 'Sigmar One', cursive;
-  font-size: 4vw;
+  font-family: "Sigmar One", cursive;
+  font-size: 2.5rem;
   text-align: center;
   white-space: nowrap;
-  margin: auto auto 25px;
-  /* width: 100%; */
+  margin: 25px auto 25px;
+  -webkit-text-stroke: 1px #FFD369;
+  color: #222831;
 }
 
 .flex {
@@ -52,7 +59,7 @@ export default {
   }
   .title {
     font-size: 2.5em;
-  white-space: normal;
+    white-space: normal;
   }
   .flex {
     flex-direction: column;

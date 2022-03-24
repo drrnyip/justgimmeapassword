@@ -62,6 +62,7 @@ export default {
 </script>
 
 <style scoped>
+
 #generator {
   width: 100%;
   padding: 12px 20px;
@@ -72,6 +73,9 @@ export default {
   text-align: center;
   font-size: 2em;
   border-radius: 10px;
+  border: 1px solid #FFD369;
+  background: #222831;
+  color: #EEEEEE;
 }
 
 .btn-icon {
@@ -86,9 +90,9 @@ export default {
   padding: 5px 10px;
   margin: 8px 5px;
   font-family: "Raleway", sans-serif;
-  background: #3366cc;
-  color: white;
-  border: 1px ridge white;
+  background: #222831;
+  color: #EEEEEE;
+  border: 1px ridge #FFD369;
   cursor: pointer;
 }
 

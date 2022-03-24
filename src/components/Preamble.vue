@@ -28,7 +28,7 @@ export default {
 }
 .item:before {
   content: "✓";
-  color: green;
+  color: #FFD369;
   margin-right: 10px;
 }
 </style>
