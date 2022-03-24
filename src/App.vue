@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title">just gimme a password</h1>
+  <Title />
   <div id="main">
     <Generator />
     <Preamble />
@@ -11,6 +11,7 @@
 import Generator from "./components/Generator.vue";
 import Preamble from "./components/Preamble.vue";
 import Footer from "./components/Footer.vue";
+import Title from "./components/Title.vue";
 
 export default {
   name: "App",
@@ -18,6 +19,12 @@ export default {
     Generator,
     Preamble,
     Footer,
+    Title,
+  },
+  methods: {
+    animate() {
+      console.log("ANIMTING");
+    },
   },
 };
 </script>
@@ -37,15 +44,6 @@ body {
   color: white;
 }
 
-.title {
-  font-family: "Sigmar One", cursive;
-  font-size: 4vmax;
-  text-align: center;
-  white-space: nowrap;
-  margin: 25px auto 25px;
-  -webkit-text-stroke: 1px #ffd369;
-  color: #222831;
-}
 
 .flex {
   display: flex;
@@ -57,12 +55,10 @@ body {
   #main {
     width: 90%;
   }
-  .title {
-    font-size: 2.5em;
-    white-space: normal;
-  }
+
   .flex {
     flex-direction: column;
   }
 }
+
 </style>
