@@ -76,6 +76,11 @@ export default {
   outline: none;
 }
 
+#generator:focus {
+  background: #393e46;
+  border-radius: 10px 10px 0 0;
+}
+
 .btn-icon {
   vertical-align: middle;
   width: 15px;
