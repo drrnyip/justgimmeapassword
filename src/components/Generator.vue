@@ -127,7 +127,6 @@ export default {
 
   .btn {
     height: 50px !important;
-    cursor: default !important;
   }
 
   .left {
