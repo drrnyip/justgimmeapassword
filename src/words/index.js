@@ -1,7 +1,6 @@
 import { adjectives } from "./adjectives";
 import { gerunds } from "./gerunds";
 import { nouns } from "./nouns";
-// import { adverbs } from "./adverbs";
 
 const specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "-"];
 
