@@ -10,13 +10,19 @@
   <meta name="keywords" content="password, passphrase, generator, security, random, owasp">
   <link rel="icon" href="https://justgimmeapassword.com/favicon.ico">
   <title>Just Gimme A Password</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=<%= process.env.VUE_APP_GOOGLE_TAG %>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
+
     gtag('config', '<%= process.env.VUE_APP_GOOGLE_TAG %>');
   </script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="drrnyip" data-description="Support me on Buy me a coffee!"
+    data-message="Coffee tips go a long way towards keeping this site up, and keeping me sane"
+    data-color="#ffd369" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </head>
 
 <body>
