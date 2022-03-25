@@ -4,13 +4,11 @@
     <Generator />
     <Preamble />
   </div>
-  <Footer />
 </template>
 
 <script>
 import Generator from "./components/Generator.vue";
 import Preamble from "./components/Preamble.vue";
-import Footer from "./components/Footer.vue";
 import Title from "./components/Title.vue";
 
 export default {
@@ -18,7 +16,6 @@ export default {
   components: {
     Generator,
     Preamble,
-    Footer,
     Title,
   },
   methods: {
