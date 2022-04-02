@@ -1,16 +1,16 @@
 <template>
   <h1 class="title flex">
     <div v-for="words in rows" :key="words" class="row">
-      <template v-for="(word, index) in words" :key="word">
+      <template v-for="word in words" :key="word.entry">
         <p
-          v-for="letter in word.entry.split('')"
+          v-for="(letter, index) in word.entry.split('')"
           :key="letter"
-          :id="`${index}${word}${letter}`"
-          @mouseover="hover(`${index}${word}${letter}`)"
-          @mouseout="stopHover(`${index}${word}${letter}`)"
+          :id="`${index}${word.entry}${letter}`"
+          @mouseover="hover(`${index}${word.entry}${letter}`)"
+          @mouseout="stopHover(`${index}${word.entry}${letter}`)"
           :class="{
-            animate: isHovering(`${index}${word}${letter}`),
-            fallout: word.fallout && falloutNow(`${index}${word}${letter}`),
+            animate: isHovering(`${index}${word.entry}${letter}`),
+            fallout: word.fallout && falloutNow(`${index}${word.entry}${letter}`),
           }"
           class="letter"
         >
