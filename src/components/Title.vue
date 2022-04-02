@@ -1,10 +1,11 @@
 <template>
   <h1 class="title flex">
-    <div v-for="(words, index) in rows" :key="index" class="row">
-      <template v-for="word in words" :key="word">
+    <div v-for="words in rows" :key="words" class="row">
+      <template v-for="(word, index) in words" :key="word">
         <p
           v-for="letter in word.entry.split('')"
           :key="letter"
+          :id="`${index}${word}${letter}`"
           @mouseover="hover(`${index}${word}${letter}`)"
           @mouseout="stopHover(`${index}${word}${letter}`)"
           :class="{
@@ -15,7 +16,7 @@
         >
           {{ letter }}
         </p>
-      <p class="letter blank">_</p>
+        <p class="letter blank">_</p>
       </template>
     </div>
   </h1>
