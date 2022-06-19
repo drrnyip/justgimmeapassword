@@ -3,6 +3,7 @@ import Toast, { POSITION } from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import App from './App.vue'
 import 'dotenv/config';
+import './registerServiceWorker'
 
 const options = {
     hideProgressBar: true,
