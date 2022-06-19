@@ -49,5 +49,17 @@
   ],
   "volta": {
     "node": "14.19.0"
+  },
+  "vue": {
+    "pwa": {
+      "iconPaths": {
+        "faviconSVG": null,
+        "favicon32": "img/icons/icon.png",
+        "favicon16": null,
+        "appleTouchIcon": null,
+        "maskIcon": null,
+        "msTileImage": null
+      }
+    }
   }
 }
