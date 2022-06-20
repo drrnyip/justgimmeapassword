@@ -17,16 +17,15 @@
     "vue-toastification": "^2.0.0-rc.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-pwa": "^4.5.18",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-babel": "^5.0.6",
+    "@vue/cli-plugin-eslint": "^5.0.6",
+    "@vue/cli-plugin-pwa": "^5.0.6",
+    "@vue/cli-service": "^5.0.6",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
-    "dotenv": "^16.0.0",
-    "eslint": "^6.7.2",
+    "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.0.0",
-    "webpack": "^4.46.0"
+    "webpack": "^5.73.0"
   },
   "eslintConfig": {
     "root": true,
@@ -51,15 +50,6 @@
     "node": "14.19.0"
   },
   "vue": {
-    "pwa": {
-      "iconPaths": {
-        "faviconSVG": null,
-        "favicon32": "img/icons/icon.png",
-        "favicon16": null,
-        "appleTouchIcon": null,
-        "maskIcon": null,
-        "msTileImage": null
-      }
-    }
+    "pwa": {}
   }
 }
