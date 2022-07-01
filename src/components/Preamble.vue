@@ -5,7 +5,7 @@
       <h4>Generated passwords will always meet these password standards:</h4>
       <li class="item">easy to remember</li>
       <li class="item">more than 8 characters</li>
-      <li class="item">less than 20 characters</li>
+      <li class="item">maximum length of 20 characters</li>
       <li class="item">contains uppercase letters</li>
       <li class="item">contains a number</li>
       <li class="item">contains a special character</li>
