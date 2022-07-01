@@ -10,7 +10,7 @@ function generateNewPassword() {
   let selectedGerund = gerunds[getRandomInt(gerunds.length - 1)];
   let selectedNoun = nouns[getRandomInt(nouns.length - 1)];
 
-  if (selectedGerund.length < 6) {
+  if (selectedGerund.length <= 6) {
     pw += capitalize(selectedAdjective);
   }
   pw += capitalize(selectedGerund);
