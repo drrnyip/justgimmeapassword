@@ -10,11 +10,11 @@ function generateNewPassword() {
   let selectedGerund = gerunds[getRandomInt(gerunds.length - 1)];
   let selectedNoun = nouns[getRandomInt(nouns.length - 1)];
 
-  pw += capitalize(selectedAdjective);
-  pw += capitalize(selectedGerund);
-  if (pw.length < 14) {
-    pw += capitalize(selectedNoun);
+  if (selectedGerund.length < 6) {
+    pw += capitalize(selectedAdjective);
   }
+  pw += capitalize(selectedGerund);
+  pw += capitalize(selectedNoun);
   pw += specialCharacters[getRandomInt(specialCharacters.length - 1)];
   pw += getRandomInt(9);
   if (pw.length < 20) {
