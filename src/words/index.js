@@ -12,7 +12,9 @@ function generateNewPassword() {
 
   pw += capitalize(selectedAdjective);
   pw += capitalize(selectedGerund);
-  pw += capitalize(selectedNoun);
+  if (pw.length < 14) {
+    pw += capitalize(selectedNoun);
+  }
   pw += specialCharacters[getRandomInt(specialCharacters.length - 1)];
   pw += getRandomInt(9);
   if (pw.length < 20) {
