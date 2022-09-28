@@ -17,8 +17,8 @@ export default {
     Generator,
     Preamble,
     Title,
-  },
-;
+  }
+}
 </script>
 
 <style>
