@@ -3,12 +3,7 @@
     <ul class="list">
       <h3></h3>
       <h4>Generated passwords will always meet these password standards:</h4>
-      <li class="item">easy to remember</li>
-      <li class="item">more than 8 characters</li>
-      <li class="item">maximum length of 20 characters</li>
-      <li class="item">contains uppercase letters</li>
-      <li class="item">contains a number</li>
-      <li class="item">contains a special character</li>
+      <li v-for="standard in standards" :key="standard" class="item">{{standard}}</li>
     </ul>
   </div>
 </template>
@@ -16,6 +11,18 @@
 <script>
 export default {
   name: "Preamble",
+  data() {
+    return {
+      standards: [
+        "easy to remember",
+        "more than 8 characters",
+        "maximum length of 20 characters",
+        "contains uppercase letters",
+        "contains a number",
+        "contains a special character",
+      ],
+    }
+  }
 };
 </script>
 
@@ -23,9 +30,11 @@ export default {
 .requirements {
   text-align: justify;
 }
+
 .list {
   list-style-type: none;
 }
+
 .item:before {
   content: "✓";
   color: #FFD369;

@@ -18,12 +18,7 @@ export default {
     Preamble,
     Title,
   },
-  methods: {
-    animate() {
-      console.log("ANIMTING");
-    },
-  },
-};
+;
 </script>
 
 <style>
