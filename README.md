@@ -11,4 +11,4 @@ Random Passphrase generator. Generated passwords always fit the following requir
 Generated passphrases consist of an adjective + gerund + noun. Word lists for each word type can be found under src/words.
 
 ### Hosting
-Application is currently hosted at https://justgimmeapassword.com
+Application is currently hosted at https://justgimmepw.com
